@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Relé</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f4f4f4;
+    }
+    button {
+      font-size: 24px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Controle do LED (Relé)</h1>
+  <button onclick="ligarLED()">Ligar LED</button>
+
+  <script>
+    function ligarLED() {
+      fetch('/ligar')  // Envia requisição para o servidor
+        .then(response => {
+          if (response.ok) {
+            alert('LED ligado com sucesso!');
+          } else {
+            alert('Erro ao ligar o LED.');
+          }
+        });
+    }
+  </script>
+</body>
+</html>

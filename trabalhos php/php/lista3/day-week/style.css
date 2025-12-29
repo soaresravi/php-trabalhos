@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    background-color: rgb(167, 227, 211);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+form {
+    background-color: rgb(220, 241, 236);
+    font-size: 26px;
+    max-width: 300px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+input[type=number] {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.3);
+    width: 20%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #739a96;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.3);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #406f6a;
+}
+
+.result {
+    font-size: 60px;
+    font-weight: bold;
+    color:#022a25;
+    text-align: center;
+    padding: 20px;
+}
